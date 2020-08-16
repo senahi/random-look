@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {text-align: center; background-color: #343a40}
+        .container-fluid {background: #ffc107; color: #343a40; max-width: 800px; margin: 20px auto; padding: 20px}
+        p {max-width: 600px; margin: 0 auto}
+        input {padding: 0 5px; margin: 10px}
+        .content {
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+    <title>random look generator!</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col align-self-center">
+                <h1 class="display-4">random look generator!</h1>
+                    <p>this tool can help you come up with an idea for a person to draw or use in your story! this is only a simple program - it can have outrageous ides... You can follow them but also don't have to take the outcome super seriously, either way, have fun!</p>
+                    <input type="button" class="collapsible" value="Options">
+                    <div class="content">
+                      <p>more options coming!</p>
+                    </div>
+                    
+                    <br />
+                    <input type="button" value="randomize!" id="randomButton" onclick="randomLook()">
+                    <input type="button" value="refresh" id="refreshButton" onclick="refreshPage()">
+                    <div id="outcome"></div>
+                    
+            </div>
+        </div>
+    </div>
+    <script src="random.js"></script>
+</body>
+</html>
